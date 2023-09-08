@@ -5,9 +5,10 @@ Scraping a Single Gab User Profile by Benedict Castro | benedict.zcastro@gmail.c
 # Import needed modules
 from bs4 import BeautifulSoup
 import requests
+import time
 
 # Declare global variables
-URL = "https://www.whiskyshop.com/scotch-whisky?item_availability=In+Stock"
+URL = "https://gab.com/worth__fighting__for"
 
 
 def main():
@@ -19,6 +20,7 @@ def main():
 
     # Request the content of the webpage
     response = requests.get(URL)
+    time.sleep(5)
 
     # Parse through the response with BeautifulSoup
     soup = BeautifulSoup(response.text, "html.parser")
