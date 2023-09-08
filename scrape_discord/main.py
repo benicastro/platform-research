@@ -32,8 +32,8 @@ def main():
     servers_list = ["916725085019181056"]
 
     # Define credentials
-    ACCT_EMAIL = "pythonuniversality@gmail.com"
-    ACCT_PASSWORD = "pythonCombustion007"
+    ACCT_EMAIL = "YOUR EMAIL"
+    ACCT_PASSWORD = "YOUR PASSWORD"
 
     for server in servers_list:
         # Request user data from website
